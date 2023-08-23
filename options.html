@@ -1,0 +1,26 @@
+// manifest.json
+{
+  ...
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  ...
+}
+<!-- options.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extension Options</title>
+</head>
+<body>
+  <h1>Extension Options</h1>
+  <form id="options-form">
+    <label for="break-interval">Break Interval (minutes):</label>
+    <input type="number" id="break-interval" name="break-interval" min="1" value="60">
+    <button type="submit">Save</button>
+  </form>
+
+  <script src="options.js"></script>
+</body>
+</html>

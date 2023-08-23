@@ -1,27 +1,33 @@
 {
-    "manifest_version": 3,
-    "name": "Break Reminder",
-    "version": "1.0",
-    "description": "Reminds you to take a break after 1 hour.",
-    "permissions": [],
-    "host_permissions": [
-      "alarms"
-    ],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "images/icon.png",  
-        "48": "images/icon.png",  
-        "128": "images/icon.png" 
-      }
-    },
-    "icons": {
+  "manifest_version": 3,
+  "name": "Break Reminder",
+  "version": "1.0",
+  "description": "Reminds you to take a break after 1 hour.",
+  "permissions": [],
+  "host_permissions": ["alarms"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
       "16": "images/icon.png",  
-      "48": "images/icon.png",   
-      "128": "images/icon.png"  
-    },
-    "background": {
-      "service_worker": "background.js"
+      "48": "images/icon.png",  
+      "128": "images/icon.png" 
+    }
+  },
+  "icons": {
+    "16": "images/icon.png",  
+    "48": "images/icon.png",   
+    "128": "images/icon.png"  
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "take-break": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+B",
+        "mac": "Command+Shift+B"
+      },
+      "description": "Take a break"
     }
   }
-  
+}
